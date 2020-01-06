@@ -1,0 +1,9 @@
+.Ds_store
+node_modules/
+.vscode/
+.vs/
+/bin/libs/laya.*
+/bin/**
+!/bin/*.html
+!/bin/unpack.json
+*.log

@@ -1,0 +1,30 @@
+{   
+    "parser": "babel-eslint",
+    "parserOptions": {
+        "ecmaVersion": 6,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "js": true
+        }        
+    },
+    "globals": {
+        "Laya": true,
+        "laya": true,
+        "Rx": true
+    },
+    "rules": {
+        "comma-dangle": ["off", "always-multiline"],
+        "semi": 1,
+        "camelcase": 0,
+        "one-var": 0,
+        "indent": [1, 2],
+        "no-tabs": "off",
+        "linebreak-style": [0, "windows"],
+        "class-methods-use-this": 0,
+        "padded-blocks": [0, "always"],
+        "quotes": [0, "double", { "allowTemplateLiterals": true }],
+        "no-use-before-define": ["error", { "functions": false, "classes": true }]
+    },
+    "extends": [], 
+    "plugins": []
+}

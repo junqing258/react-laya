@@ -1,0 +1,20 @@
+{
+	"compilerOptions": {
+    "jsx": "react",
+		"experimentalDecorators": true,
+		"allowSyntheticDefaultImports": true,
+		"baseUrl": "./src",
+		"target": "es5"
+	},
+	"files":[
+		"libs/LayaAir.d.ts",
+		"libs/jsx.d.ts"
+	],
+	"include": [
+		"src"
+	],
+	"exclude": [
+		"node_modules",
+		"bin"
+	]
+}
