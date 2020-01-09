@@ -1,15 +1,13 @@
 import React from 'react';
 import ReactLayaRenderer from './react-laya/index';
 
-import Integral from './components/Integral';
+import App from './App';
 
 const { Stage, Handler, Sprite } = Laya;
 
-function App() {
-  let stage;
-  // Laya.Config.isAntialias = true;
+function main() {
   Laya.init(1334, 750, Laya.WebGL);
-  stage = Laya.stage;
+  const stage = Laya.stage;
   stage.scaleMode = Stage.SCALE_FIXED_AUTO;
   stage.alignH = Stage.ALIGN_CENTER;
   stage.alignV = Stage.ALIGN_MIDDLE;
@@ -17,8 +15,7 @@ function App() {
 
   Laya.Stat.show();
 
-  // ScenseManager.loadScense('/integral');
-  ReactLayaRenderer.render(<Integral/>, stage);
+  ReactLayaRenderer.render(<App/>, stage);
 };
 
-window.addEventListener('DOMContentLoaded', App);
+window.addEventListener('DOMContentLoaded', main);
