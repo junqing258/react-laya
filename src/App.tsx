@@ -1,15 +1,16 @@
 import React from 'react';
-import { HashRouter, Route, Switch } from 'react-router-dom';
+import { MemoryRouter, Route, Switch } from 'react-router';
+// import { HashRouter } from 'react-router-dom';
 
 import Integral from './components/Integral';
 
 const App: React.FC = () => {
   return (
-    <HashRouter>
+    <MemoryRouter>
       <Switch>
         <Route path="/" exact component={Integral} />
       </Switch>
-    </HashRouter>
+    </MemoryRouter>
   );
 };
 

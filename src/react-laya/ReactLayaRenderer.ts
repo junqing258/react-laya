@@ -58,6 +58,8 @@ const hostConfig = {
         domElement.addEventListener("click", propValue);
       } else if (propName === "className") {
         domElement.setAttribute("class", propValue);
+      } else if (propName === "style") {
+        domElement.setAttribute("class", propValue);
       } else {
         const propValue = newProps[propName];
         domElement.setAttribute(propName, propValue);
