@@ -6,7 +6,7 @@ const { Image, Sprite, Text } = Laya;
 export default class Integral extends Component {
 
   state: { count: number; };
-  score: any;
+  private score: React.RefObject<any>;
 
   constructor(props) {
     super(props);
@@ -17,12 +17,9 @@ export default class Integral extends Component {
 
     this.score = createRef();
 
-    setInterval(() => {
-      this.setState({
-        count: ++this.state.count
-      });
-    }, 1000);
-
+    Laya.timer.loop(1, this, () => {
+      this.setState({ count: ++this.state.count });
+    });
   }
 
   componentDidMount() {
@@ -30,7 +27,7 @@ export default class Integral extends Component {
   }
 
 
-  handleClick(e) {
+  private handleClick(e) {
     this.score.current.y += 4;
   }
 

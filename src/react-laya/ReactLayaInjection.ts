@@ -13,7 +13,6 @@ Laya.Node.prototype.addEventListener = function(type, listener) {
 }
 
 // Laya.Node.prototype.removeChild
-// Laya.Text
 
 Object.defineProperty(Laya.Text.prototype, 'textContent', {
   get: function() {
