@@ -25,8 +25,7 @@ export default class Integral extends Component {
   componentDidMount() {
     console.log(`[componentDidMount]: Integral`);
   }
-
-
+  
   private handleClick(e) {
     this.score.current.y += 4;
   }
