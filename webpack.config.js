@@ -31,7 +31,6 @@ module.exports = {
         use: [{
           loader: 'url-loader',
           options: {
-            // 8192 = 1024 * 8 小于等于8k的转换成 base64
             limit: 8192,
             name: './assets/[name].[hash:6].[ext]'
           }
